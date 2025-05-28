@@ -1,0 +1,186 @@
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+#bg-video{
+  position:fixed;
+  color: #000;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.animation{
+  opacity: 0;
+  transform: translateY(40px);
+  animation: magic 1s ease-out forwards;
+}
+
+@keyframes magic {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  width: 100%;
+  padding: 20px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.name{
+  margin-left: 30px;;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline;
+   color: rgb(156, 148, 148);
+}
+
+ .name span {
+  color:black;
+} 
+@media (max-width:400px){
+  .name{
+    display: none;
+  }
+  .active{
+    display:none;
+  }
+  
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: rgb(155, 147, 147);
+
+  text-decoration: none;
+}
+
+.contact-section {
+  margin-top: 65px;;
+  text-align: center;
+  width: 50%;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 span {
+  color: gray;
+}
+.cont{
+  margin-top: 60x;
+  color: rgb(156, 148, 148);
+}
+.cont span{
+  color:black;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+.pera{
+  color: white;
+  font-size: 1.5rem;
+  font-family: italic;
+  margin-top: 20px;;
+  margin-bottom: 1px;;
+}
+
+
+.pera:hover{
+  color:#000;
+  cursor: pointer;
+  font-size: xx-large;
+}
+.input-box {
+  position: relative;
+  color: white;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 20px;
+  background: transparent;
+  border: 3px solid  white;
+  box-shadow: 3px solid gray;
+  color: white;
+  outline: wheat;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.send-button {
+  background-color:rgb(131, 122, 122)
+
+;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px white  ;
+  transition: 0.3s;
+}
+
+.send-button:hover {
+  box-shadow: 0px 0px 20px grey
+}

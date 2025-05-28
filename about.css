@@ -1,0 +1,162 @@
+body {
+  /* background-color: #0a0a0a; */
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* padding: 0; */
+}
+
+#bg-video{
+  position:fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.animation{
+  opacity: 0;
+  transform: translateY(50px);
+  animation: magic 1.8s ease-in forwards;
+}
+
+@keyframes magic {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: black;
+  color: white;
+}
+header {
+  width: 100%;
+  padding: 20px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  display: inline;
+   color: rgb(156, 148, 148);
+}
+
+.name span {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  top: 30px;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links .active {
+  color: grey;
+
+  text-decoration: none;
+}
+
+.cont{
+  margin-top: 70px ;
+  color: rgb(148, 137, 137);
+
+}
+.cont span{
+color:black;
+
+}
+.timeline {
+
+  position: relative;
+  width: 50%;
+  margin-top: 70px;;
+  padding: 40px 0;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+.left {
+  left: 0;
+  text-align: right;
+}
+.right {
+  left: 50%;
+  text-align: left;
+}
+
+
+.content {
+  background: black;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(147, 137, 137);
+  box-shadow: 3px 6px 17px grey;
+  display: inline-block;
+  max-width: 90%;
+}
+h2 {
+  color: grey;
+}
+h3:hover{
+  text-decoration: underline color(white);
+}
+@media (max-width:420px){
+  .name{
+    display: none;
+  }
+ .cont{
+  display: none;
+ }
+ .container{
+  margin-top: 30px;;
+  width: 60%;
+ }
+ .nav-links{
+  margin-left: 40px;;
+  direction: column;
+ }
+  
+  .active{
+    display:none;
+  }
+}
